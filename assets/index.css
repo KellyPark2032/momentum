@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2c3e50;
+  font-family: "Raleway", sans-serif;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+button {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: inherit;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  right: -150px;
+}
+
+.js-clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.js-clock h1 {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+form input {
+  color: #222;
+  border-radius: 2px;
+  border: none;
+  font-size: 22px;
+  text-align: center;
+}
+
+.js-form input[type="text"] {
+  width: 320px;
+  height: 60px;
+  color: #000;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(237, 255, 203, 0.5);
+}
+
+.js-greetings {
+  position: absolute;
+  top: 6%;
+  font-size: 30px;
+  font-weight: 500;
+  right: 3%;
+}
+
+i {
+  position: relative;
+  margin-top: 3.5%;
+  left: 3%;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.toDoList {
+  background: rgba(168, 168, 168, 0.9);
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+}
+.toDoList h3 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.js-toDoList {
+  padding-top: 10px;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  line-height: 200%;
+}
+
+.js-toDoForm input[type="text"] {
+  width: 350px;
+  height: 80px;
+  top: 15%;
+  color: #000;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.js-form input::placeholder {
+  color: #222;
+  font-weight: 300;
+  font-size: 16px;
+}
+.js-toDoForm input {
+  font-size: 16px;
+  font-weight: 500;
+}
+.js-toDoForm input::placeholder {
+  color: #222;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.js-toDoList h3 {
+  font-size: 26px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  border-bottom: 1px solid #000;
+}
+
+.js-toDoList li {
+  font-size: 16px;
+}
+
+.js-weather {
+  position: absolute;
+  float: right;
+  text-align: right;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  font-size: 20px;
+  right: 3%;
+  top: 18%;
+  line-height: 150%;
+}
+@keyframes fandIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
